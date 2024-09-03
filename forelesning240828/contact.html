@@ -25,11 +25,19 @@
                 <h2>Ta kontakt med oss i dag</h2>
                 <form method="post" action="#">
                     <label for="navn">Navn:</label>
-                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn">
+                    <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlenght="4">
 
                     <label>
                         E-post:
                         <input type="email" name="email" placeholder="eksempel@hiof.no">
+                    </label>
+                    <label>
+                        Emne:
+                        <input type="text" name="emne" placeholder="Hva er temaet?">
+                    </label>
+                    <label>
+                        Melding:
+                        <textarea name="melding" placeholder="Skriv utfyllende tekst her.."></textarea>
                     </label>
                 </form>
             </section>
