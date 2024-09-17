@@ -2,7 +2,30 @@ body{
     font-family: arial, helvetica, sans-serif;
 }
 
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    padding: 0;
+}
+
 h1{
     color:rgb(192, 11, 47);
-    font-size: 60px;   
+    font-size: 60px;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    background-color: yellowgreen;
+    padding: 2rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a.btn{
+    background-color: rgb(18, 47, 37);
+    color: #fff;
+    padding: 2rem;
+    display: inline-block;
+    margin: 10px 0px;
 }
