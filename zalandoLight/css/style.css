@@ -45,6 +45,7 @@ body{
     nav{
         ul{
             list-style: none;
+            padding: 0px 20px;
         }
     }
 }
@@ -133,5 +134,52 @@ img{
     box-shadow: 13px 9px 20px 0px #efefef;
     border-radius: 4px;
     padding: 1rem;
+}
+
+
+/*DESKTOP*/
+@media only screen and (min-width:800px){
+
+    .fa-bars{
+        display: none;
+    }
+
+    #menu{
+        display: flex !important;
+    }
+
+}
+
+/*MOBIL*/
+@media only screen and (max-width:800px){
+    #menu{
+        display: none;
+    }
+
+    #grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+
+    }
+
+    header, main, aside, footer{
+        grid-column: 1 / 2;
+    }
+
+    header{
+        grid-row: 1 /2;
+    }
+
+    main{
+        grid-row: 2 / 3;
+    }
+
+    aside{
+        display: none;
+    }
+
+    footer{
+        grid-row: 3 / 4;
+    }
 }
 
