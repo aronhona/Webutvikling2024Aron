@@ -1,0 +1,102 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    
+
+    nav{
+        background: rgb(175, 174, 174);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        #logo{
+            text-decoration: none;
+            color: black;
+            margin: 1rem;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        ul{
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0 1rem 1rem 1rem;
+        }
+    }
+
+    section{
+        padding: 3rem;
+    }
+}
+
+main{
+    section{
+        background-color: rgb(108, 108, 205);
+        color: rgb(255, 255, 255);
+    }
+
+    figure{
+        width: 100%;
+        padding: 0;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+.main-under-bildet{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+#change-order{
+    display:flex;
+    flex-wrap: wrap;
+
+    section{
+        order: 99;
+    }
+
+    figure{
+        width: 100%;
+        padding: 0;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+#tjenester{
+    background-color: rgb(255, 255, 255);
+    color:black;
+
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn{
+    text-decoration: none;
+    border-style: solid;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+}
