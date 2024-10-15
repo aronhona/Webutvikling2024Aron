@@ -1,4 +1,9 @@
-body{
-    background-color: rgb(55, 55, 223);
+@use 'layout.scss';
+@use 'login.scss';
+@import 'colors.scss';
 
+
+body{
+    background-color: $blue;
+    height: 100vh;
 }
