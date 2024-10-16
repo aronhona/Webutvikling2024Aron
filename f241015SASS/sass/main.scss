@@ -1,6 +1,6 @@
 @use 'layout.scss';
 @use 'login.scss';
-@import 'colors.scss';
+@use 'colors.scss' as *;
 
 
 body{
