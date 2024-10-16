@@ -1,18 +1,14 @@
-@use 'colors.scss' as *;
+@use 'colors' as *;
+@use 'mixins' as *;
 
 form{
     background-color: $white;
-    padding: 3rem;
     color: $greyblack;
-    max-width: 600px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    gap: 0.5rem;
+    @include flexbox(column, nowrap, 1rem);
+    @include box(600px, auto, 3rem, 30px);
 
     input{
-        padding: 1rem;
+        @include box(100%, auto, 1rem, 20px);
         border: 1px solid $greyblack;
     }
 }
