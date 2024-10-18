@@ -1,3 +1,7 @@
+@use 'fonts' as *;
+
 body{
     background-color: gray;
+    font-family: $mainFont;
+
 }
