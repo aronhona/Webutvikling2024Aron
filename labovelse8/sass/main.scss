@@ -37,7 +37,20 @@ body{
 
 
     nav{
-        @include box(100%, auto, 1rem, 20px, $secColor);  
+        @include box(100%, auto, 1rem, 50px, $secColor);  
+        @extend .global-nav-position;
+        margin: 10px;
+
+        ul{
+            @include flexbox(row, nowrap, 0);
+            @extend .global-nav;
+
+
+            i{
+                @extend .global-nav-icons;
+            }
+
+        }
     }
 
 
