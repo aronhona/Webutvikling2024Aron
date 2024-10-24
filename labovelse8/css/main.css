@@ -1,24 +1,152 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-#flexgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, auto);
+.category-box, #flexbox main #categories #el, #flexbox main #categories #fashion, #flexbox main #categories #home {
+  background-color: #ababba;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.news-box-img, #flexbox main #news .scroll-container img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.pop-box-img, #flexbox main #popular img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.logo-img, #flexbox header .logo img {
+  border-radius: 100px;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 0;
+}
+
+#flexbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
   width: 100%;
 }
-#flexgrid header {
+#flexbox header {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ababba;
+}
+#flexbox header .logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0;
+  width: 100%;
+  align-items: center;
+}
+#flexbox nav {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #1b5e02;
+}
+#flexbox main {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #f9f4f4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+#flexbox main #welcome-banner {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #f9f4f4;
+}
+#flexbox main #categories {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #f9f4f4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  gap: 1rem;
+}
+#flexbox main #categories h2 {
   grid-column: 1/3;
   grid-row: 1/2;
 }
-#flexgrid nav {
-  grid-column: 1/3;
+#flexbox main #categories #el {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+#flexbox main #categories #fashion {
+  grid-column: 2/3;
   grid-row: 2/3;
+  height: 100px;
 }
-#flexgrid footer {
-  grid-column: 1/3;
-  grid-row: 4/5;
-}
-
-main {
-  grid-column: 1/3;
+#flexbox main #categories #home {
+  grid-column: 2/3;
   grid-row: 3/4;
+  height: 100px;
+}
+#flexbox main #news {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #f9f4f4;
+}
+#flexbox main #news .scroll-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 100%;
+  height: 470px;
+  overflow: scroll;
+}
+#flexbox main #popular {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #f9f4f4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+#flexbox main #popular h2 {
+  width: 100%;
+}
+#flexbox footer {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ababba;
 }/*# sourceMappingURL=main.css.map */
