@@ -3,14 +3,28 @@
 @use 'base' as *;
 
 #flexgrid{
-    @include flexgrid(1fr 1fr, repeat(8, auto), 100%);
+    @include flexgrid(1fr 1fr, repeat(4, auto), 100%);
+
+
+    header{
+        @include grid-placement("1/3", "1/2");
+    }
+
+
+    nav{
+        @include grid-placement("1/3", "2/3");
+    }
+
+
+
+    footer{
+        @include grid-placement("1/3", "4/5");
+    }
+
+
 }
 
-h1{
-    font-family: $mainFont;
-    color: $mainColor;
-}
 
-body{
-    background-color: grey;
+main{
+    @include grid-placement("1/3", "3/4");
 }

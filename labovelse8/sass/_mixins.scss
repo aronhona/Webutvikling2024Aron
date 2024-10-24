@@ -14,6 +14,6 @@
 }
 
 @mixin grid-placement($column, $row){
-    grid-column: $column;
-    grid-row: $row;
+    grid-column: #{$column};
+    grid-row: #{$row};
 }
