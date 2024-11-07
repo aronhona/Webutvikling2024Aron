@@ -11,99 +11,105 @@
 	</head>
 	<body>
 		<script>
-		function mobilMenu(){
-			var x = document.getElementById("ham");
+			function mobilMenu(){
+				var x = document.getElementById("ham");
 
-			if(x.style.display === "block"){
-				x.style.display = "none";
+				if(x.style.display === "block"){
+					x.style.display = "none";
+				}
+				
+				else {
+					x.style.display= "block";
+				}
 			}
-			
-			else {
-				x.style.display= "block";
-			}
-		}
 		</script>
-	<div id="grid-container">
-		<header id="page-header">
-			<h1>Søkemotoroptimalisering</h1>
-		</header>
-		<nav>
-			<h2>Logo</h2>
-			<i class="fas fa-hamburger" onclick="mobilMenu()"></i>
-			<ul id="ham" class="top-menu">
-				<li><a>Link</a></li>
-				<li><a>Link</a></li>
-				<li><a>Link</a></li>
-				<!-- Her starter dropdown -->
-				<li class="dropdown-point"> 
-					<a>Oblig 1</a>
-					<ul class="dropdown-main">
-						<li><a>HTML-skjema</a></li>
-						<li><a>Media typer</a></li>
-						<li><a>CSS Layout</a></li>
-					</ul>
-				</li>
-				<!-- Her slutter dropdown -->
-	
-			</ul>
-		</nav>
-		<div id="main">
-			<article id="item-1">
-				<header>
-					<h1>Overskrift 1</h1>
-				</header>
-				<img src="https://picsum.photos/400/400" alt="Bilde av en hvit Suhr Classic HS">
-				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
+		<div id="grid-container">
+			<header id="page-header">
+				<h1>Søkemotoroptimalisering</h1>
+			</header>
+			<nav>
+				<h2>Logo</h2>
+				<i class="fas fa-hamburger" onclick="mobilMenu()"></i>
+				<ul id="ham" class="top-menu">
+					<li><a href="mirco/ovelse1.html">The Witcher</a></li>
+					<li><a href="mirco/ovelse2.html">VideoGamesSeries</a></li>
+					<li><a href="mirco/ovelse3.html">Microdata - bok</a></li>
+					<!-- Her starter dropdown -->
+					<li class="dropdown-point"> 
+						<a href="https://lms.webtricks.blog/">LMS</a>
+						<ul class="dropdown-main">
+							<li><a href="https://www.w3schools.com/html/html_forms.asp">HTML-skjema</a></li>
+							<li><a href="https://www.w3schools.com/html/html_media.asp">Media typer</a></li>
+							<li><a href="https://www.w3schools.com/css/css_website_layout.asp">CSS Layout</a></li>
+						</ul>
+					</li>
+					<!-- Her slutter dropdown -->
+		
+				</ul>
+			</nav>
+			<main>
+				<article id="item-1">
+					<header>
+						<h2>Suhr Guitars</h2>
+					</header>
+					<img src="img/suhr_classic.jpg" alt="Bilde av en hvit Suhr Classic HS">
+					<p>
+						If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
+					</p>
+					<a href="https://www.suhr.com/instruments/classic-s-antique/">See more Suhr Classic Antiques</a>
+				</article>
+				<article id="item-2">
+					<header>
+						<h2>Gibson Guitars</h2>
+					</header>
+					<img src="img/gibsones335.webp" alt="Bilde av en rød Gibson ES335">
+					<p>
+						If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
+					</p>
+					<a href="https://www.gibson.com/en-US/About-Us">Read more about the Gibson history</a>
+				</article>
+				<article id="item-3">
+					<header>
+						<h2>Fender Guitars</h2>
+					</header>
+					<img src="img/fender_cs_strat.webp" alt="Bilde av en Fender Stratocaster med sunburst-farge">
+					<p>
+						If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
+					</p>
+					<a href="https://www.fendercustomshop.com/">Check out Fender Custom Shop</a>
+				</article>
+				<article>
+					<header>
+						<h2>Tama Drums</h2>
+					</header>
+					<img src="img/Lars_signature_kit_Image4.jpg" alt="Bilde av Tama trommesett">
+					<p>
+						If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
+					</p>
+					<a href="https://www.tama.com/usa/artists/">See who plays Tama!</a>
+				</article>
+				<article>
+					<header>
+						<h2>Fender Bass Guitars</h2>
+					</header>
+					<img src="img/fenderpbass.webp" alt="Bilde av en svart Fender Presicion Bass bassgitar.">
+					<p>
+						If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
+					</p>
+					<a href="https://www.fender.com/en-NO/start?rl=en">See the Fender Bass Range</a>
+				</article>
+			</main>
+			<aside>
+				<h3>Merker</h3>
+				<video width="320" height="240" autoplay loop muted>
+					<source src="video/es335.mp4" type="video/mp4">
+				
+					Your browser does not support the video tag.
+					<p>
+					Video by <a href="https://pixabay.com/users/joshua_ulmann-16268690/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=45447">Joshua Malic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=45447">Pixabay</a>
 				</p>
-				<a>Les mer</a>
-			</article>
-			<article id="item-2">
-				<header>
-					<h1>Overskrift 2</h1>
-				</header>
-				<img src="https://picsum.photos/400/400" alt="Bilde av en rød Gibson ES335">
-				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
-				</p>
-				<a>Les mer</a>
-			</article>
-			<article id="item-3">
-				<header>
-					<h1>Overskrift 3</h1>
-				</header>
-				<img src="https://picsum.photos/400/400" alt="Bilde av en Fender Stratocaster med sunburst-farge">
-				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
-				</p>
-				<a>Les mer</a>
-			</article>
-			<article>
-				<header>
-					<h1>Overskrift 1</h1>
-				</header>
-				<img src="https://picsum.photos/400/400" alt="Bilde av Tama trommesett">
-				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
-				</p>
-				<a>Les mer</a>
-			</article>
-			<article>
-				<header>
-					<h1>Overskrift 2</h1>
-				</header>
-				<img src="https://picsum.photos/400/400" alt="Bilde av en svart Fender Presicion Bass bassgitar.">
-				<p>
-					If you break the rules, try to leave or lose the game, you will die. Just like Saaaaw. Oh, wow. That's an intense line of questioning, Snuffles I'll tell you how I feel about school, Jerry. It's a waste of time.
-				</p>
-				<a>Les mer</a>
-			</article>
-		</div>
-		<div id="aside">
-			<h3>Merker</h3>
-			<section id="video">
-			</section>
-			<section id="rel-article">
+				</video>
+				
 				<ul>
 					<li><a href="https://www.fender.com/en-NO/start">Fender</a></li>
 					<li><a href="https://www.gibson.com/en-US/">Gibson</a></li>
@@ -111,14 +117,14 @@
 					<li><a href="https://no.yamaha.com/no/products/musical_instruments/guitars_basses/index.html">Yamaha</a></li>
 					<li><a href="https://www.tama.com/eu/">Tama</a></li>
 				</ul>
-			</section>			
-			<section id="google-btn">
+					
+		
 				<a href="https://www.google.no/" class="btn">Google</a>
-			</section>
+				
+			</aside>
+			<footer>
+				Webutvikling 2024
+			</footer>
 		</div>
-		<footer>
-			Webutvikling 2024
-		</footer>
-	</div>
 	</body>
 </html>
